@@ -1,0 +1,17 @@
+.git
+.venv
+.local-logs
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/node_modules
+**/.next
+**/.env*
+*.db
+*.db-*
+apps/web
+docs
+tests
+docker
+packages
+

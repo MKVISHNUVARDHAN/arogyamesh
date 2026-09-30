@@ -1,0 +1,9 @@
+**/node_modules
+**/.next
+**/__pycache__
+.venv
+*.db
+.env
+.git
+**/test-results
+**/*.npz

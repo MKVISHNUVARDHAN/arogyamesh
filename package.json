@@ -1,0 +1,23 @@
+{
+  "name": "arogyamesh",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "python scripts/dev.py",
+    "demo:reset": "python -m scripts.seed",
+    "test": "python -m pytest -q",
+    "web:build": "npm --prefix apps/web run build",
+    "web:test": "npm --prefix apps/web test",
+    "vercel:link:api": "vercel link",
+    "vercel:link:web": "vercel link --cwd apps/web",
+    "vercel:pull": "vercel env pull .env.local && vercel env pull apps/web/.env.local --cwd apps/web",
+    "vercel:deploy:api": "vercel",
+    "vercel:deploy:web": "vercel --cwd apps/web",
+    "vercel:prod:api": "vercel --prod",
+    "vercel:prod:web": "vercel --prod --cwd apps/web"
+  },
+  "dependencies": {
+    "@neon/config": "^1.8.3",
+    "@neon/env": "^1.4.8"
+  }
+}
